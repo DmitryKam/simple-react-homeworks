@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    background-color: dimgrey;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    margin: 0 auto;
+    font-size: 30px;
+    text-transform: uppercase;
+}

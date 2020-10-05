@@ -1,0 +1,25 @@
+.navMenu{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+    max-width: 100%;
+    border: 1px solid firebrick;
+
+
+}
+
+.navItem {
+    margin: 0 10px;
+    text-decoration: none; /* убирает нижнее подчёркивание*/
+    color: #000; /* цвет чёрный*/
+    text-transform: uppercase; /* text upper */
+    font-weight: bold; /* Text жирный*/
+    font-size: 24px; /*изменили размер шрифта */
+    letter-spacing: 5px; /* немного расширили расстояние между буквами*/
+    font-family: "Roboto", "sans-serif";
+}
+
+.navItem:hover { /* псевдо класс используется при наведении*/
+    color: firebrick;
+}

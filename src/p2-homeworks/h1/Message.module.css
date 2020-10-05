@@ -1,0 +1,54 @@
+
+.general {
+
+    display: flex;
+
+}
+
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 22px;
+    margin: 5px;
+    border: 1px solid;
+    align-self: flex-end;
+
+}
+
+.content {
+    position: relative;
+    border: 1px solid;
+    padding: 11px;
+    border-radius: 10px 10px 10px 0;
+
+}
+
+.name {
+    font-size: 7px;
+    margin-bottom: 5px;
+
+}
+.message {
+    font-size: 8px;
+
+}
+
+.time {
+    font-size: 10px;
+    justify-self: start;
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+}
+.before {
+    width: 0;
+    height: 0;
+    content: "";
+    top: 36px;
+    left: 0px;
+    position: relative;
+    border-style: solid;
+    border-width: 13px 13px 0 0;
+    border-color: transparent #533 transparent transparent;
+}

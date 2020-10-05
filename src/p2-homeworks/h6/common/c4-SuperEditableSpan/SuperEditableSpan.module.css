@@ -1,0 +1,12 @@
+.superSpan{
+    font-family: Tahoma;
+    color: aquamarine;
+    text-decoration: darkolivegreen;
+    opacity: 0.7;
+}
+
+.superSpan:hover{
+    color:peachpuff;
+    font-weight: bold;
+    text-decoration: linen;
+}

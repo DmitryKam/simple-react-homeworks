@@ -1,0 +1,9 @@
+.input{
+    color:sandybrown;
+    font-size: 20px;
+}
+
+.input:hover{
+    color: white;
+    text-transform: uppercase;
+}
