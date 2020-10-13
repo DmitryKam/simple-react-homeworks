@@ -26,7 +26,7 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
-                />
+                 />
             </div>
 
             <hr/>
