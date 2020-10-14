@@ -2,7 +2,7 @@
   "name": "simple-react-homeworks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://DmitryKam.github.io/simple-react-homeworks",
+  "homepage": "https://dmitrykam.github.io/simple-react-homeworks",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

@@ -2,16 +2,16 @@ import React, {useState} from "react";
 import SuperSelect from "./common/c5-SuperSelect/SuperSelect";
 import SuperRadio from "./common/c6-SuperRadio/SuperRadio";
 
-const arr = ["x", "y", "z"];
 
 function HW7() {
-    const [value, onChangeOption] = useState(arr[1]);
 
+    const [arr, setArr] = useState(["x", "y", "z"]);
+    const [value, onChangeOption] = useState(arr[1]);
+    console.log(arr)
     return (
         <div>
             <hr/>
-            homeworks 7.1
-
+            homeworks 7.2
             {/*should work (должно работать)*/}
             <div>
                 <SuperSelect

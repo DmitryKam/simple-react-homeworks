@@ -3,7 +3,7 @@ import s from './SuperRadio.module.css'
 type DefaultRadioPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
 type SuperRadioPropsType = DefaultRadioPropsType & {
-    options?: any[]
+    options?: string[]
     onChangeOption?: (option: any) => void
 }
 
