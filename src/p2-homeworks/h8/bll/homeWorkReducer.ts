@@ -1,19 +1,16 @@
 import {PeopleType} from '../HW8';
 
-type SortUpActionType = {
+type SortActionType = {
     type: 'sort'
     payload: string
 }
-type SortDownActionType = {
-    type: 'sort'
-    payload: string
-}
+
 type CheckActionType = {
     type: 'check'
     payload: number
 }
 
-type ActionType = SortUpActionType | SortDownActionType | CheckActionType;
+type ActionType = SortActionType | CheckActionType;
 
 
 export const homeWorkReducer = (state: Array<PeopleType>, action: ActionType): Array<PeopleType> => {
@@ -45,12 +42,10 @@ export const homeWorkReducer = (state: Array<PeopleType>, action: ActionType): A
 };
 
 
-export const SortUpAC = (payload: string): SortUpActionType => {
+export const SortAC = (payload: string): SortActionType => {
     return {type: 'sort', payload: payload}
 }
-export const SortDownAC = (payload: string): SortDownActionType => {
-    return {type: 'sort', payload: payload}
-}
+
 export const CheckAC = (payload: number): CheckActionType => {
     return {type: 'check', payload: payload}
 }

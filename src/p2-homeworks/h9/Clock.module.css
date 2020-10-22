@@ -1,0 +1,15 @@
+.clock{
+    color: rgba(121, 18, 104, 0.59);
+    text-align: center;
+}
+.clock:hover{
+    color: #e8cf3e;
+    font-size: 20px;
+    border: 1px solid #e8cf3e;
+}
+
+.data{
+    color: rgba(121, 18, 104, 0.59);
+    text-align: center;
+    border: 1px solid #e8cf3e;
+}

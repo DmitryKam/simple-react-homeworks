@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {CheckAC, homeWorkReducer, SortDownAC, SortUpAC} from './bll/homeWorkReducer';
+import {CheckAC, homeWorkReducer, SortAC} from './bll/homeWorkReducer';
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
@@ -29,8 +29,8 @@ function HW8() {
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, SortUpAC("up")))
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, SortDownAC("down")))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, SortAC("up")))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, SortAC("down")))
     const chekAge = () => setPeople(homeWorkReducer(initialPeople, CheckAC(18)))
 
     return (
