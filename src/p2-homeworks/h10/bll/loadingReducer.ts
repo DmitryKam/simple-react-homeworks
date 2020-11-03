@@ -1,14 +1,39 @@
-const initState = {
+import {AppStoreType} from './store';
 
+const LOADING = 'LOADING'
+
+
+export type InitStateType = {
+    loadingInReducer: boolean
+}
+
+const initState: InitStateType = {
+    loadingInReducer: false
 };
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+type LoadingType = {
+    type: 'LOADING'
+    loadingInReducer: boolean
+
+}
+
+type ActionType = LoadingType;
+
+export const loadingReducer = (state: InitStateType = initState, action: ActionType): InitStateType => { // fix any
     switch (action.type) {
-        case "": {
-            return state;
+        case 'LOADING': {
+            console.log(action.loadingInReducer)
+            return {
+                ...state,
+                loadingInReducer: action.loadingInReducer
+            }
         }
-        default: return state;
+        default:
+            return state;
     }
 };
 
-export const loadingAC = (): any => {}; // fix any
+export const loadingAC = (loadingInReducer: boolean): LoadingType => {
+    return {type: LOADING, loadingInReducer}
+
+}; // fix any
