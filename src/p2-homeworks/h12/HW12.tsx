@@ -17,7 +17,6 @@ function HW12() {
 
 
     function onChangeCallback(value: string) {
-        debugger;
          let action = changeThemeC(value);
          dispatch(action);
     }
@@ -39,6 +38,7 @@ function HW12() {
                 options={themes.themes}
                 value={themes.theme}
                 onChangeOption={onChangeCallback}
+                name={'Hi'}
                 // onChange={onChangeCallback}
             />
             <hr/>

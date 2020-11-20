@@ -16,17 +16,17 @@ type RangeSliderPropsType = {
 
 export default function RangeSlider(props:RangeSliderPropsType) {
     const classes = useStyles();
-    const [value, setValue] = React.useState<number[]>([20, 37]);
+    //const [value, setValue] = React.useState<number[]>([20, 37]);
 
-    const handleChange = (event: any, newValue: number | number[]) => {
-        setValue(newValue as number[]);
-        props.onChangeRange2 && props.onChangeRange2(newValue as number[])
+    const handleChange = (event: any, value: number | number[]) => {
+        //setValue(newValue as number[]);
+        props.onChangeRange2 && props.onChangeRange2(value as number[])
     };
 
     return (
         <div className={classes.root}>
             <Slider
-                value={value}
+                value={props.value}
                 onChange={handleChange}
                 valueLabelDisplay="auto"
                 aria-labelledby="range-slider"
