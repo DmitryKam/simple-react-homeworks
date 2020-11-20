@@ -38,7 +38,7 @@ function HW12() {
                 options={themes.themes}
                 value={themes.theme}
                 onChangeOption={onChangeCallback}
-                name={'Hi'}
+                name={'color'}
                 // onChange={onChangeCallback}
             />
             <hr/>
